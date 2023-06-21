@@ -1,0 +1,41 @@
+# Vite files
+
+dist
+
+# Environment variables
+
+*.env
+!.env-*
+
+# Dependency directories
+
+node_modules
+
+# ESLint files
+
+.eslintcache
+
+# TypeScript files
+
+tsconfig.tsbuildinfo
+
+# macOS and iOS files
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Compiled files
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Secret files
+
+*.der
+*.key
+*.pem

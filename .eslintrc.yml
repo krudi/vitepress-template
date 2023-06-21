@@ -1,0 +1,22 @@
+extends:
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:prettier/recommended"
+
+plugins:
+  - "@typescript-eslint"
+  - "prettier"
+
+parser: "@typescript-eslint/parser"
+
+rules:
+  quotes:
+    - error
+    - single
+  quote-props:
+    - error
+    - consistent
+  prettier/prettier:
+    - error
+    - singleQuote: true
+  import/no-anonymous-default-export:
+    - off

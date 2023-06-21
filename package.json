@@ -1,0 +1,75 @@
+{
+  "name": "vitepress-template",
+  "description": "A template with VitePress with many add-ons and useful features.",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/krudi/vite-template/LICENSE"
+    }
+  ],
+  "version": "0.1.0",
+  "publishers": [
+    {
+      "name": "authors",
+      "email": "example@mail.com",
+      "url": "https://github.com/krudi/vitepress-template"
+    }
+  ],
+  "authors": [
+    {
+      "name": "authors",
+      "email": "example@mail.com",
+      "url": "https://github.com/krudi/vitepress-template"
+    }
+  ],
+  "private": false,
+  "homepage": "https://github.com/krudi/vitepress-template#readme",
+  "bugs": {
+    "url": "https://github.com/krudi/vitepress-template/issue"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krudi/vitepress-template.git"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "http://example.com/donate/"
+    }
+  ],
+  "engines": {
+    "node": ">= 16.14.0"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "dev:host": "npm run dev -- --host",
+    "preview": "vitepress preview docs",
+    "build": "vitepress build docs",
+    "lint:js": "eslint --ext .js,.ts .",
+    "lint:js:fix": "eslint --fix --ext .js,.ts .",
+    "lint:files": "prettier --check \"**\"",
+    "lint:files:fix": "prettier --write \"**\"",
+    "lint:markdown": "markdownlint **/*.md",
+    "lint:full": "npm run lint:js && npm run lint:files && npm run lint:markdown",
+    "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown",
+    "deploy": "npm run build"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "markdownlint": "^0.28.2",
+    "markdownlint-cli": "^0.34.0",
+    "prettier": "^2.8.8",
+    "vitepress": "^1.0.0-alpha.76"
+  },
+  "dependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,11 @@
+# Ignore all files
+
+*
+
+# Except for specific extensions
+
+!*.json
+!*.yaml
+!*.yml
+!*.json5
+!*.toml

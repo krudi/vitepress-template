@@ -1,0 +1,31 @@
+name: Spell checker
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  cspell:
+    name: Spell check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Checkout the current branch
+        uses: actions/checkout@main
+        with:
+          persist-credentials: false
+
+      - name: Run spell check using cspell
+        uses: streetsidesoftware/cspell-action@main
+        with:
+          config: ".cspell.json"
+          files: "**/*.md"
+          inline: error
+          incremental_files_only: false

@@ -1,0 +1,52 @@
+name: Continuous integration
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+
+  pull_request:
+    branches:
+      - develop
+      - main
+
+env:
+  NODE: 18
+
+jobs:
+  install:
+    name: Build and start Node.js project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the current branch
+        uses: actions/checkout@main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@main
+        with:
+          node-version: '${{ env.NODE }}'
+
+      - name: Install dependencies in the project
+        run: npm ci
+
+      - name: Build the project
+        run: npm run build
+
+  lint:
+    name: Check code styling
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the current branch
+        uses: actions/checkout@main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@main
+        with:
+          node-version: '${{ env.NODE }}'
+
+      - name: Install dependencies in the project
+        run: npm ci
+
+      - name: Run code styling check
+        run: npm run lint:full
