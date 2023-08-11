@@ -1,0 +1,8 @@
+"*.jsx": next lint
+"*.{js,ts,jsx,tsx}":
+  - eslint --ext .js,.ts,.jsx,.tsx .
+"*.scss": stylelint **/*.{css,scss}
+"**/*":
+  - prettier --check "**"
+"**/*.md":
+  - markdownlint
