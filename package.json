@@ -37,7 +37,7 @@
   "funding": [
     {
       "type": "individual",
-      "url": "http://example.com/donate/"
+      "url": "http://example.com/donate"
     }
   ],
   "engines": {
@@ -50,8 +50,8 @@
     "build": "vitepress build docs",
     "lint:js": "eslint --ext .js,.ts .",
     "lint:js:fix": "eslint --fix --ext .js,.ts .",
-    "lint:files": "prettier --check \"**\"",
-    "lint:files:fix": "prettier --write \"**\"",
+    "lint:files": "prettier --check \"**/*.{html,graphql,yml,yaml,vue}\"",
+    "lint:files:fix": "prettier --write \"**/*.{html,graphql,yml,yaml,vue}\"",
     "lint:markdown": "markdownlint **/*.md",
     "lint:full": "npm run lint:js && npm run lint:files && npm run lint:markdown",
     "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown",

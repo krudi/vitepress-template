@@ -1,8 +1,8 @@
-"*.jsx": next lint
 "*.{js,ts,jsx,tsx}":
-  - eslint --ext .js,.ts,.jsx,.tsx .
-"*.scss": stylelint **/*.{css,scss}
-"**/*":
-  - prettier --check "**"
-"**/*.md":
-  - markdownlint
+  - npm run lint:js
+"*.{css,scss}":
+  - npm run lint:css
+"*.{html,graphql,yml,yaml,vue}":
+  - npm run lint:files
+"*.md":
+  - npm run lint:markdown
