@@ -43,6 +43,7 @@
   "engines": {
     "node": ">= 16.14.0"
   },
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
     "dev:host": "npm run dev -- --host",
