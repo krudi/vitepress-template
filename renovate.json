@@ -1,6 +1,23 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "baseBranches": ["main"],
+  "automerge": true,
+  "packageRules": [
+    {
+      "updateTypes": [
+        "major"
+      ],
+      "enabled": true,
+      "automerge": false
+    }
+  ],
+  "automergeType": "pr",
+  "pruneBranchAfterAutomerge": true,
+  "prCreation": "immediate",
+  "includePaths": [
+    "./package.json"
   ]
 }
