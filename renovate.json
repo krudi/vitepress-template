@@ -3,21 +3,35 @@
     "config:base",
     ":disableDependencyDashboard"
   ],
-  "baseBranches": ["main"],
-  "automerge": true,
+  "includePaths": [
+    "package.json"
+  ],
+  "semanticCommits": true,
+  "rangeStrategy": "bump",
+  "rebaseLabel": "rebase",
+  "rebaseWhen": "auto",
   "packageRules": [
+    {
+      "updateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    },
     {
       "updateTypes": [
         "major"
       ],
-      "enabled": true,
       "automerge": false
+    },
+    {
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "automerge": true
     }
   ],
-  "automergeType": "pr",
-  "pruneBranchAfterAutomerge": true,
-  "prCreation": "immediate",
-  "includePaths": [
-    "./package.json"
-  ]
+  "platformAutomerge": true
 }
