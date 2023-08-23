@@ -10,6 +10,10 @@
   "rangeStrategy": "bump",
   "rebaseLabel": "rebase",
   "rebaseWhen": "auto",
+  "schedule": [
+    "after 10pm and before 5am every weekday",
+    "every weekend"
+  ],
   "packageRules": [
     {
       "updateTypes": [
@@ -18,7 +22,8 @@
         "pin",
         "digest"
       ],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "updateTypes": [
