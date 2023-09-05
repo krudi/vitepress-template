@@ -10,6 +10,9 @@
   "rangeStrategy": "bump",
   "rebaseLabel": "rebase",
   "rebaseWhen": "auto",
+  "schedule": [
+    "after 2am and before 3am on sunday"
+  ],  
   "packageRules": [
     {
       "updateTypes": [
@@ -19,10 +22,7 @@
         "digest"
       ],
       "automerge": true,
-      "automergeType": "branch",
-      "schedule": [
-        "after 4pm on sunday"
-      ]      
+      "automergeType": "branch" 
     },
     {
       "updateTypes": [
@@ -34,10 +34,7 @@
       "depTypeList": [
         "devDependencies"
       ],
-      "automerge": true,
-      "schedule": [
-        "after 4pm on sunday"
-      ]      
+      "automerge": true
     }
   ],
   "platformAutomerge": true
