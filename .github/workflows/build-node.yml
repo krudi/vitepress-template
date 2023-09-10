@@ -1,4 +1,4 @@
-name: Continuous integration
+name: Install dependencies and build the project
 
 on:
   push:
@@ -11,13 +11,16 @@ on:
       - develop
       - main
 
-env:
-  NODE: 18
-
 jobs:
   install:
     name: Build and start Node.js project
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version:
+          - "18"
+
     steps:
       - name: Checkout the current branch
         uses: actions/checkout@main
@@ -25,7 +28,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@main
         with:
-          node-version: '${{ env.NODE }}'
+          node-version: '${{ matrix.node-version }}'
+
+      - name: Cache dependencies installed with Node Package Manager
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: node_modules-${{hashFiles('package-lock.json')}}
+          restore-keys: node_modules-
 
       - name: Install dependencies in the project
         run: npm ci
