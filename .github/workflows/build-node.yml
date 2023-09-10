@@ -5,11 +5,13 @@ on:
     branches:
       - develop
       - main
+      - "!dependabot/**"
 
   pull_request:
     branches:
       - develop
       - main
+      - "!dependabot/**"
 
 jobs:
   install:
