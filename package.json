@@ -75,7 +75,7 @@
     "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
-    "@types/node": "^20.5.9",
+    "@types/node": "^20.8.9",
     "typescript": "^5.2.2"
   }
 }
