@@ -2,13 +2,13 @@ blank_issues_enabled: false
 contact_links:
   - name: Get help
     url: https://github.com/krudi/vitepress-template/discussions/categories/q-a
-    about: If something is not working as you expected, please ask an issue on our forum
+    about: If something is not working as you expected, please ask an issue on our forum.
   - name: Feature Request
     url: https://github.com/krudi/vitepress-template/discussions/categories/ideas
-    about: Submit your thoughts in our forum
+    about: Submit your thoughts in our forum.
   - name: Bug Report
     url: https://github.com/krudi/vitepress-template/issues/new
-    about: If you have asked for help with an issue and confirmed that the package itself is not working correctly, please create a bug report
+    about: If you have asked for help with an issue and confirmed that the package itself is not working correctly, please create a bug report.
   - name: Discussions
     url: https://github.com/krudi/vitepress-template/discussions/new
-    about: Formu is the place where you can ask about anything
+    about: Forum is the place where you can ask about anything.
