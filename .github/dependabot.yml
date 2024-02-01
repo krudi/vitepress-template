@@ -4,3 +4,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      VitePress:
+        patterns:
+          - vitepress
+      TypeScript:
+        patterns:
+          - typescript
+          - "@types/*"
+      ESLint:
+        patterns:
+          - eslint
+          - "@typescript-eslint/*"
+      Lint:
+        patterns:
+          - prettier
+          - markdownlint
