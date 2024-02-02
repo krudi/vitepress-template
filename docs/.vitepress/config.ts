@@ -6,6 +6,8 @@ import { sidebar } from './sidebar'
 export default defineConfig({
   title: name,
   description: description,
+  cleanUrls: true,
+  lastUpdated: true,
   markdown: {
     lineNumbers: true
   },
