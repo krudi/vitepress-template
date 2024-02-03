@@ -1,6 +1,7 @@
-# Vitepress files
+# VitePress files
 
-docs
+docs/.vitepress/cache
+docs/.vitepress/dist
 
 # Environment variables
 

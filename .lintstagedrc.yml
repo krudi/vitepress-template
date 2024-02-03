@@ -1,7 +1,5 @@
 "*.{js,ts,jsx,tsx}":
   - npm run lint:js
-"*.{css,scss}":
-  - npm run lint:css
 "*.{html,graphql,yml,yaml,vue}":
   - npm run lint:files
 "*.md":
