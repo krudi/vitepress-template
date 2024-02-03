@@ -15,7 +15,7 @@ hero:
   tagline: A template with VitePress with many add-ons and useful features.
   actions:
     - theme: brand
-      text: Go to Documentation
+      text: Gehe zu Dokumentation
       link: /en/guide/markdown-examples
     - theme: alt
       text: Markdown Cheat Sheet

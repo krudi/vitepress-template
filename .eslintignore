@@ -1,6 +1,7 @@
-# Vite files
+# VitePress files
 
-dist
+docs/.vitepress/cache
+docs/.vitepress/dist
 
 # Dependency directories
 
