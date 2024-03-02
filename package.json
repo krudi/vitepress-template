@@ -55,20 +55,14 @@
     "lint:files:fix": "prettier --write \"**/*.{html,graphql,yml,yaml,vue}\"",
     "lint:markdown": "markdownlint **/*.md",
     "lint:full": "npm run lint:js && npm run lint:files && npm run lint:markdown",
-    "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown",
-    "deploy": "npm run build",
-    "prepare": "husky install"
+    "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.6.0",
-    "@commitlint/config-conventional": "^18.6.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
-    "husky": "^9.0.10",
-    "lint-staged": "^15.2.2",
     "markdownlint": "^0.33.0",
     "markdownlint-cli": "^0.39.0",
     "prettier": "^3.2.4",

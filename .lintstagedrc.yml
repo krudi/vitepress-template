@@ -1,6 +1,0 @@
-"*.{js,ts,jsx,tsx}":
-  - npm run lint:js
-"*.{html,graphql,yml,yaml,vue}":
-  - npm run lint:files
-"*.md":
-  - npm run lint:markdown
