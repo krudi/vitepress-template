@@ -67,7 +67,7 @@
     "markdownlint-cli": "^0.39.0",
     "prettier": "^3.2.5",
     "vitepress": "^1.0.0-rc.45",
-    "vitepress-sidebar": "^1.21.0"
+    "vitepress-sidebar": "^1.23.2"
   },
   "dependencies": {
     "@types/node": "^20.11.29",
