@@ -1,16 +1,16 @@
-import path from 'path'
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
   resolve: {
     alias: [
       {
         find: '@',
-        replacement: path.resolve(__dirname, './')
+        replacement: resolve(__dirname, './')
       },
       {
         find: '~',
-        replacement: path.resolve(__dirname, './')
+        replacement: resolve(__dirname, './')
       }
     ]
   },
