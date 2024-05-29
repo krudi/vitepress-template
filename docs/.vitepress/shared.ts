@@ -26,6 +26,7 @@ export const shared = defineConfig({
     return head
   },
   head: [
+    ['meta', { charset: 'utf-8' }],
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     ['meta', { name: 'application-name', content: 'vitepress-template' }],
