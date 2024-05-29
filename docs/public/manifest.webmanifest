@@ -1,43 +1,69 @@
 {
-  "name": "frontend",
-  "short_name": "frontend",
-  "description": "Description for the manifest file.",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#AFCC1E",
-  "lang": "en-EN",
-  "orientation": "any",
-  "icons": [
-    {
-      "src": "favicons/vite-16x16.svg",
-      "sizes": "16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicons/vite-32x32.svg",
-      "sizes": "32x32",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicons/vite-48x48.svg",
-      "sizes": "48x48",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicons/vite-144x144.svg",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "favicons/vite-192x192.svg",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "favicons/vite-512x512.svg",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ]
+    "name": "frontend",
+    "short_name": "frontend",
+    "description": "Description for the manifest file.",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#AFCC1E",
+    "lang": "en-EN",
+    "orientation": "any",
+    "prefer_related_applications": true,
+    "categories": [
+        "template"
+    ],
+    "icons": [
+        {
+            "src": "favicons/vite-16x16.svg",
+            "type": "image/svg+xml",
+            "sizes": "16x16",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicons/vite-32x32.svg",
+            "type": "image/svg+xml",
+            "sizes": "32x32",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicons/vite-48x48.svg",
+            "type": "image/svg+xml",
+            "sizes": "48x48",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicons/vite-144x144.svg",
+            "type": "image/svg+xml",
+            "sizes": "144x144",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicons/vite-192x192.svg",
+            "type": "image/svg+xml",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicons/vite-512x512.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "manifest/desktop-home-screen-view.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "form_factor": "wide",
+            "label": "Homescreen of the app in the desktop view."
+        },
+        {
+            "src": "manifest/mobile-home-screen-view.webp",
+            "sizes": "540x720",
+            "type": "image/webp",
+            "form_factor": "narrow",
+            "label": "Homescreen of the app in the mobile view."
+        }
+    ]
 }
