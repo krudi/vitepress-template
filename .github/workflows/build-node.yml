@@ -14,7 +14,7 @@ on:
       - "!dependabot/**"
 
 jobs:
-  install:
+  build:
     name: Build and start Node.js project
     runs-on: ubuntu-latest
     strategy:
@@ -31,13 +31,7 @@ jobs:
         uses: actions/setup-node@main
         with:
           node-version: '${{ matrix.node-version }}'
-
-      - name: Cache dependencies installed with Node Package Manager
-        uses: actions/cache@main
-        with:
-          path: node_modules
-          key: node_modules-${{hashFiles('package-lock.json')}}
-          restore-keys: node_modules-
+          cache: npm
 
       - name: Install dependencies in the project
         run: npm ci
