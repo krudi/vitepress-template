@@ -10,20 +10,28 @@ export const shared = defineConfig({
   sitemap: {
     hostname: 'http://localhost:5173'
   },
-  transformHead: ({ pageData }) => {
-    const head: HeadConfig[] = []
+  transformPageData(pageData) {
+    pageData.frontmatter.head ??= [];
 
-    head.push(['meta', { name: 'keywords', content: pageData.frontmatter.keywords }])
-    head.push(['meta', { name: 'creator', content: pageData.frontmatter.creator }])
-    head.push(['meta', { name: 'publisher', content: pageData.frontmatter.publisher }])
-    head.push(['meta', { name: 'author', content: pageData.frontmatter.author }])
-    head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
-    head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
-    head.push(['meta', { property: 'og:locale', content: pageData.frontmatter.locale }])
-    head.push(['meta', { name: 'twitter:title', content: pageData.frontmatter.title }])
-    head.push(['meta', { name: 'twitter:description', content: pageData.frontmatter.description }])
+    const addMeta = (type, name, property, content) => {
+      pageData.frontmatter.head.push([
+        'meta',
+        {
+          [type]: name || property,
+          content: pageData.frontmatter[content]
+        }
+      ]);
+    };
 
-    return head
+    addMeta('name', 'keywords', null, 'keywords');
+    addMeta('name', 'creator', null, 'creator');
+    addMeta('name', 'publisher', null, 'publisher');
+    addMeta('name', 'author', null, 'author');
+    addMeta('property', null, 'og:title', 'title');
+    addMeta('property', null, 'og:description', 'description');
+    addMeta('property', null, 'og:locale', 'lang');
+    addMeta('name', 'twitter:title', null, 'title');
+    addMeta('name', 'twitter:description', null, 'description');
   },
   head: [
     ['meta', { charset: 'utf-8' }],
