@@ -19,13 +19,13 @@ export const de = defineConfig({
     nav: [
       {
         text: 'Startseite',
-        link: '/en/'
+        link: '/'
       },
     ],
     sidebar: generateSidebar({
       useTitleFromFrontmatter: true,
       capitalizeEachWords: true,
-      documentRootPath: '/docs/',
+      documentRootPath: './',
       scanStartPath: '/de/',
       rootGroupText: 'Inhalt',
       excludeFolders: ['en'],

@@ -45,10 +45,10 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev",
     "dev:host": "npm run dev -- --host",
-    "preview": "vitepress preview docs",
-    "build": "vitepress build docs",
+    "preview": "vitepress preview",
+    "build": "vitepress build",
     "lint:js": "eslint --ext .js,.ts .",
     "lint:js:fix": "eslint --fix --ext .js,.ts .",
     "lint:files": "prettier --check \"**/*.{html,graphql,yml,yaml,vue}\"",

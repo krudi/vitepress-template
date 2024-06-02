@@ -4,6 +4,9 @@ export const shared = defineConfig({
   title: 'vitepress-template',
   cleanUrls: true,
   lastUpdated: true,
+  ignoreDeadLinks: [
+    /^https?:\/\/localhost/,
+  ],
   markdown: {
     lineNumbers: true
   },

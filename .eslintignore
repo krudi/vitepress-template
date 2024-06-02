@@ -1,7 +1,7 @@
 # VitePress files
 
-docs/.vitepress/cache
-docs/.vitepress/dist
+.vitepress/cache
+.vitepress/dist
 
 # Dependency directories
 

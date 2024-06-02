@@ -25,8 +25,8 @@ export const en = defineConfig({
     sidebar: generateSidebar({
       useTitleFromFrontmatter: true,
       capitalizeEachWords: true,
-      documentRootPath: '/docs/',
-      scanStartPath: '/en/',
+      documentRootPath: './',
+      scanStartPath: '/',
       rootGroupText: 'Contents',
       excludeFolders: ['de'],
     }),

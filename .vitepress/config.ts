@@ -7,7 +7,7 @@ export default defineConfig({
   ...shared,
   locales: {
     root: {
-      link: '/en/',
+      link: '/',
       label: 'English',
       ...en
     },
