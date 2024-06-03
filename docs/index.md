@@ -16,7 +16,7 @@ hero:
   actions:
     - theme: brand
       text: Gehe zu Dokumentation
-      link: /en/guide/markdown-examples
+      link: /guide/markdown-examples
     - theme: alt
       text: Markdown Cheat Sheet
       link: https://www.markdownguide.org/cheat-sheet

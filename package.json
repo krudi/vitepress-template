@@ -45,10 +45,9 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
-    "dev:host": "npm run dev -- --host",
-    "preview": "vitepress preview",
-    "build": "vitepress build",
+    "dev": "vitepress dev docs",
+    "preview": "vitepress preview docs",
+    "build": "vitepress build docs",
     "lint:js": "eslint --ext .js,.ts .",
     "lint:js:fix": "eslint --fix --ext .js,.ts .",
     "lint:files": "prettier --check \"**/*.{html,graphql,yml,yaml,vue}\"",
@@ -70,7 +69,6 @@
     "prettier": "3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
-    "vitepress": "1.2.2",
-    "vitepress-sidebar": "1.23.2"
+    "vitepress": "1.2.2"
   }
 }
