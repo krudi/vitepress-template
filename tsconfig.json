@@ -1,26 +1,41 @@
 {
-  "include": ["**/*.ts", "*.d.ts", ".*.ts"],
-  "exclude": ["node_modules", "dist"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"],
-      "~/*": ["./*"]
+    "include": [
+        "./*.ts",
+        "./.vitepress/**/*.ts",
+        "./.vitepress/**/*.vue"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "incremental": false,
+        "target": "ESNext",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./*"
+            ],
+            "~/*": [
+                "./*"
+            ]
+        },
+        "types": [
+            "vite/client",
+            "vitepress",
+            "@vite-pwa/vitepress"
+        ],
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true
     },
-    "types": ["node"],
-    "target": "ES5",
-    "lib": ["ES5", "DOM"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true
-  }
 }

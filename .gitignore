@@ -3,6 +3,10 @@
 .vitepress/cache
 .vitepress/dist
 
+# Vite files
+
+dev-dist
+
 # Environment variables
 
 *.env
