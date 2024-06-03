@@ -1,11 +1,11 @@
 # VitePress files
 
-.vitepress/cache
-.vitepress/dist
+docs/.vitepress/cache
+docs/.vitepress/dist
 
 # Vite files
 
-dev-dist
+docs/dev-dist
 
 # Environment variables
 

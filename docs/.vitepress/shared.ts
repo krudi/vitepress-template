@@ -1,4 +1,4 @@
-import { defineConfig, HeadConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 import { metaTags } from './meta-tags';
 import { transformPageData } from './meta-tags-dynamic'
 import { pwaConfig } from './pwa';
