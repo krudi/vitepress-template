@@ -2,6 +2,11 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+    server: {
+        fs: {
+            allow: ['..'],
+        },
+    },
     resolve: {
         alias: [
             {

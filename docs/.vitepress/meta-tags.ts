@@ -32,7 +32,6 @@ export const metaTags: HeadConfig[] = [
         ['link', { rel: 'canonical', href: 'http://localhost:5173' }],
         ['link', { rel: 'alternate', hreflang: 'en-US', href: 'http://localhost:5173' }],
         ['link', { rel: 'alternate', media: 'only screen and (max-width: 600px)', href: `/meta-tags/page-view.webp` }],
-        ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
         ['link', { rel: 'shortcut icon', href: '/favicons/vite-favicon.svg', type: 'svg+xml' }],
         ['link', { rel: 'icon', href: '/favicons/vite-favicon.svg', type: 'svg+xml' }],
         ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/vite-apple-touch.svg' }]
