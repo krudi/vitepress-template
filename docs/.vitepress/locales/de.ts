@@ -36,6 +36,29 @@ export const de = defineConfig({
                 ]
             },
         ],
+        search: {
+            provider: 'local',
+            options: {
+                locales: {
+                    de: {
+                        translations: {
+                            button: {
+                                buttonText: 'Suchen',
+                                buttonAriaLabel: 'Suchen'
+                            },
+                            modal: {
+                                noResultsText: 'Es konnten keine Ergebnisse gefunden werden',
+                                resetButtonTitle: 'Suchkriterien löschen',
+                                footer: {
+                                    selectText: 'Option',
+                                    navigateText: 'Schalten'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         docFooter: {
             prev: 'Vorherige Seite',
             next: 'Nächste Seite'

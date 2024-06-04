@@ -43,15 +43,15 @@ export const en = defineConfig({
                     en: {
                         translations: {
                             button: {
-                                buttonText: 'buttonText',
-                                buttonAriaLabel: 'buttonAriaLabel'
+                                buttonText: 'Search',
+                                buttonAriaLabel: 'Search'
                             },
                             modal: {
-                                noResultsText: 'noResultsText',
-                                resetButtonTitle: 'resetButtonTitle',
+                                noResultsText: 'No results were found',
+                                resetButtonTitle: 'Delete search criteria',
                                 footer: {
-                                    selectText: 'selectText',
-                                    navigateText: 'navigateText'
+                                    selectText: 'Option',
+                                    navigateText: 'Switch'
                                 }
                             }
                         }
