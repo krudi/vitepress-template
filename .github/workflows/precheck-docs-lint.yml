@@ -1,13 +1,19 @@
-name: Install dependencies and build the project
+name: Run linting commands
 
 on:
   push:
+    paths:
+      - "**/*.md"
+
     branches:
       - develop
       - main
       - "!dependabot/**"
 
   pull_request:
+    paths:
+      - "**/*.md"
+
     branches:
       - develop
       - main
@@ -22,6 +28,8 @@ jobs:
       matrix:
         node-version:
           - "20.11.0"
+        command:
+          - "lint:markdown"
 
     steps:
       - name: Checkout the current branch
@@ -36,5 +44,5 @@ jobs:
       - name: Install dependencies in the project
         run: npm install
 
-      - name: Build the project
-        run: npm run build
+      - name:  Run Node linting commands
+        run: "npm run ${{ matrix.command }}"
