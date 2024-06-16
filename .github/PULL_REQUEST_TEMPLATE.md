@@ -11,7 +11,7 @@
 
 ## Checklist
 
-- [ ] I have read the [Contributing Guidelines](https://github.com/krudi/tlikcss/main/.github/CONTRIBUTING.md)
+- [ ] I have read the [Contributing Guidelines](https://github.com/krudi/vitepress-template/blob/main/.github/CONTRIBUTING.md)
 - [ ] My code follows the code style (`npm run lint:full`)
 - [ ] I added tests to cover my changes
 - [ ] I passed new and existing tests

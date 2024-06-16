@@ -1,0 +1,27 @@
+name: Feature request
+title: Suggest a new feature
+description: Propose new or enhanced features to add.
+labels: [feature]
+assignees: krudi
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Take a couple minutes to help our maintainers work faster.
+      options:
+        - label: I have read the [contributing guidelines](https://github.com/krudi/vitepress-template/blob/main/.github/CONTRIBUTING.md)
+          required: true
+  - type: textarea
+    id: gh-proposal
+    attributes:
+      label: Proposal
+      description: Please give detailed suggestions for additions, including relevant links to prior examples, screenshots, or live demonstrations where applicable
+    validations:
+      required: true
+  - type: textarea
+    id: gh-reason
+    attributes:
+      label: Motivation and context
+      description: Explain why this change is necessary or beneficial, and the issues it might address.
+    validations:
+      required: true

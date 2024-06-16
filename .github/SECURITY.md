@@ -2,4 +2,4 @@
 
 ## Reporting a Vulnerability
 
-Please report all vulnerabilities to [example@mail.com](mailto:example@mail.com).
+Please report all vulnerabilities to [patryk.kudlik@gmail.com](mailto:patryk.kudlik@gmail.com).
