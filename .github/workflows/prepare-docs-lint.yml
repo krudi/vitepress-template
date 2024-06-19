@@ -44,5 +44,5 @@ jobs:
       - name: Install dependencies in the project
         run: npm install
 
-      - name:  Run Node linting commands
+      - name: Run Node linting commands
         run: "npm run ${{ matrix.command }}"
