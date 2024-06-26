@@ -19,8 +19,8 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "@/docs/*": [
-                "./docs/*"
+            "~/*": [
+                "./*"
             ],
             "~/docs/*": [
                 "./docs/*"

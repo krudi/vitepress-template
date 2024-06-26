@@ -10,11 +10,11 @@ export default defineConfig({
     resolve: {
         alias: [
             {
-                find: '@',
-                replacement: resolve(__dirname, './docs')
+                find: '~',
+                replacement: resolve(__dirname)
             },
             {
-                find: '~',
+                find: '~/docs',
                 replacement: resolve(__dirname, './docs')
             }
         ]
