@@ -5,9 +5,6 @@ title: vitepress-template
 description: Eine Vorlage mit VitePress mit vielen Add-ons und nützlichen Funktionen.
 lang: de-DE
 keywords: schlüsselwörter
-creator: Ersteller
-publisher: Verleger
-author: Author
 
 hero:
   name: 'vitepress-template'

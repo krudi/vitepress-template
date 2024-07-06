@@ -11,10 +11,8 @@ export const transformPageData = (pageData) => {
         ]);
     };
 
+    addMeta('name', 'description', null, 'description');
     addMeta('name', 'keywords', null, 'keywords');
-    addMeta('name', 'creator', null, 'creator');
-    addMeta('name', 'publisher', null, 'publisher');
-    addMeta('name', 'author', null, 'author');
     addMeta('property', null, 'og:title', 'title');
     addMeta('property', null, 'og:description', 'description');
     addMeta('property', null, 'og:locale', 'lang');

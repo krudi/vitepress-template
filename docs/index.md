@@ -5,9 +5,6 @@ title: vitepress-template
 description: A template with VitePress with many add-ons and useful features.
 lang: en-US
 keywords: keywords
-creator: Creator
-publisher: Publisher
-author: Author
 
 hero:
   name: 'vitepress-template'
