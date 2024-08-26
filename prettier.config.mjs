@@ -1,7 +1,7 @@
 /**
  * @type {import('prettier').Config}
  */
-export const config = {
+export default {
     printWidth: 80,
     tabWidth: 2,
     useTabs: false,
