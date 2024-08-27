@@ -38,11 +38,12 @@
     "build": "vitepress build docs",
     "lint:js": "eslint -c ./eslint.config.mjs",
     "lint:js:fix": "eslint -c ./eslint.config.mjs --fix",
-    "lint:files": "prettier --check \"**/*.{html,graphql,yml,yaml,vue}\"",
-    "lint:files:fix": "prettier --write \"**/*.{html,graphql,yml,yaml,vue}\"",
-    "lint:markdown": "markdownlint **/*.md",
+    "lint:files": "prettier --check \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
+    "lint:files:fix": "prettier --write \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
+    "lint:markdown": "markdownlint ./docs/**/*.md",
+    "lint:markdown:fix": "markdownlint --fix ./docs/**/*.md",
     "lint:full": "npm run lint:js && npm run lint:files && npm run lint:markdown",
-    "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown"
+    "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown:fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
