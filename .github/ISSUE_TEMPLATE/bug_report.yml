@@ -9,7 +9,7 @@ body:
       label: Prerequisites
       description: Take a couple minutes to help our maintainers work faster.
       options:
-        - label: I have read the [contributing guidelines](https://github.com/krudi/vitepress-template/blob/main/.github/CONTRIBUTING.md)
+        - label: I have read the [contributing guidelines](https://github.com/krudi/vitepress-template/blob/main/CONTRIBUTING.md)
           required: true
   - type: textarea
     id: gh-issue-description
