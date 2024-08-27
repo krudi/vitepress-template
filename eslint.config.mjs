@@ -2,6 +2,30 @@ import globals from 'globals';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import prettierConfig from 'eslint-config-prettier';
+import importSortPlugin from 'eslint-plugin-simple-import-sort';
+
+const typeScriptConfig = [
+    ...tseslint.configs.recommended,
+    {
+        languageOptions: {
+            parser: tseslint.parser
+        },
+    },
+    {
+        files: ['**/*.{js,cjs,mjs}'],
+        ...tseslint.configs.disableTypeChecked,
+    },
+];
+
+const importSortConfig = {
+  plugins: {
+    'simple-import-sort': importSortPlugin,
+  },
+  rules: {
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+  },
+};
 
 export default tseslint.config(
     {
@@ -12,9 +36,6 @@ export default tseslint.config(
             'node_modules'
         ],
     },
-    eslint.configs.recommended,
-    ...tseslint.configs.recommended,
-    prettierConfig,
     {
         languageOptions: {
             globals: {
@@ -23,7 +44,7 @@ export default tseslint.config(
         }
     },
     {
-        files: ['**/*.{js,cjs,mjs,ts,mts}'],
+        files: ['**/*.{js,jsx,cjs,mjs,ts,tsx,mts}'],
         rules: {
             'quotes': [
                 'error',
@@ -36,5 +57,9 @@ export default tseslint.config(
             'import/prefer-default-export': 'off',
             'import/no-anonymous-default-export': 'off'
         }
-    }
+    },
+    eslint.configs.recommended,
+    ...typeScriptConfig,
+    prettierConfig,
+    importSortConfig
 );
