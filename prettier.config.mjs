@@ -3,18 +3,15 @@
  */
 export default {
     printWidth: 80,
-    tabWidth: 2,
+    tabWidth: 4,
     useTabs: false,
-    semi: false,
+    semi: true,
     singleQuote: true,
     trailingComma: 'none',
     bracketSpacing: true,
     arrowParens: 'always',
     bracketSameLine: false,
-    singleAttributePerLine: false,
-    rangeStart: 0,
-    rangeEnd: 1,
-    requirePragma: true,
-    insertPragma: true,
+    singleAttributePerLine: true,
+    insertPragma: false,
     proseWrap: 'always',
 };
