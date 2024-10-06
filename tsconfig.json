@@ -1,38 +1,22 @@
 {
-    "include": [
-        "./*.ts",
-        "./.vitepress/**/*.ts",
-        "./.vitepress/**/*.vue"
-    ],
-    "exclude": [
-        "dist",
-        "node_modules"
-    ],
+    "include": ["./*.ts", "./.vitepress/**/*.ts", "./.vitepress/**/*.vue"],
+    "exclude": ["dist", "node_modules"],
     "compilerOptions": {
         "incremental": false,
         "target": "ESNext",
-        "lib": [
-            "DOM",
-            "ESNext"
-        ],
+        "lib": ["DOM", "ESNext"],
         "module": "esnext",
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "~/*": [
-                "./docs/*"
-            ]
+            "~/*": ["./docs/*"]
         },
-        "types": [
-            "vite/client",
-            "vitepress",
-            "@vite-pwa/vitepress"
-        ],
+        "types": ["vite/client", "vitepress", "@vite-pwa/vitepress"],
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "strictNullChecks": true,
         "noUnusedLocals": true,
         "skipLibCheck": true
-    },
+    }
 }

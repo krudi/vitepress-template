@@ -1,64 +1,64 @@
 {
-  "name": "vitepress-template",
-  "description": "A template with VitePress with many add-ons and useful features.",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/krudi/vite-template/LICENSE"
+    "name": "vitepress-template",
+    "description": "A template with VitePress with many add-ons and useful features.",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/krudi/vite-template/LICENSE"
+        }
+    ],
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "krudi",
+            "email": "patryk.kudlik@gmail.com",
+            "url": "https://github.com/krudi/vitepress-template"
+        }
+    ],
+    "private": false,
+    "homepage": "https://github.com/krudi/vitepress-template#readme",
+    "bugs": {
+        "url": "https://github.com/krudi/vitepress-template/issue"
+    },
+    "keywords": [
+        "frontend"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krudi/vitepress-template.git"
+    },
+    "engines": {
+        "node": ">= 20.11.0",
+        "npm": ">= 10.8.1"
+    },
+    "type": "module",
+    "scripts": {
+        "dev": "vitepress dev docs",
+        "preview": "vitepress preview docs",
+        "build": "vitepress build docs",
+        "lint:js": "eslint -c ./eslint.config.mjs",
+        "lint:js:fix": "eslint -c ./eslint.config.mjs --fix",
+        "lint:files": "prettier --check \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
+        "lint:files:fix": "prettier --write \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
+        "lint:markdown": "markdownlint ./docs/**/*.md",
+        "lint:markdown:fix": "markdownlint --fix ./docs/**/*.md",
+        "lint:full": "npm run lint:js && npm run lint:files && npm run lint:markdown",
+        "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown:fix"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.9.1",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^20.13.0",
+        "@vite-pwa/vitepress": "^0.5.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "markdownlint": "^0.34.0",
+        "markdownlint-cli": "^0.41.0",
+        "prettier": "^3.2.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^8.2.0",
+        "vitepress": "^1.2.2"
     }
-  ],
-  "version": "0.1.0",
-  "authors": [
-    {
-      "name": "krudi",
-      "email": "patryk.kudlik@gmail.com",
-      "url": "https://github.com/krudi/vitepress-template"
-    }
-  ],
-  "private": false,
-  "homepage": "https://github.com/krudi/vitepress-template#readme",
-  "bugs": {
-    "url": "https://github.com/krudi/vitepress-template/issue"
-  },
-  "keywords": [
-    "frontend"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/krudi/vitepress-template.git"
-  },
-  "engines": {
-    "node": ">= 20.11.0",
-    "npm": ">= 10.8.1"
-  },
-  "type": "module",
-  "scripts": {
-    "dev": "vitepress dev docs",
-    "preview": "vitepress preview docs",
-    "build": "vitepress build docs",
-    "lint:js": "eslint -c ./eslint.config.mjs",
-    "lint:js:fix": "eslint -c ./eslint.config.mjs --fix",
-    "lint:files": "prettier --check \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
-    "lint:files:fix": "prettier --write \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
-    "lint:markdown": "markdownlint ./docs/**/*.md",
-    "lint:markdown:fix": "markdownlint --fix ./docs/**/*.md",
-    "lint:full": "npm run lint:js && npm run lint:files && npm run lint:markdown",
-    "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown:fix"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.13.0",
-    "@vite-pwa/vitepress": "^0.5.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "markdownlint": "^0.34.0",
-    "markdownlint-cli": "^0.41.0",
-    "prettier": "^3.2.5",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^8.2.0",
-    "vitepress": "^1.2.2"
-  }
 }

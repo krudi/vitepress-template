@@ -1,8 +1,9 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 export const de = defineConfig({
     lang: 'de-DE',
-    description: 'Eine Vorlage mit VitePress mit vielen Add-ons und nützlichen Funktionen.',
+    description:
+        'Eine Vorlage mit VitePress mit vielen Add-ons und nützlichen Funktionen.',
     themeConfig: {
         siteTitle: 'Dokumentation',
         outlineTitle: 'Navigation',
@@ -12,14 +13,15 @@ export const de = defineConfig({
         darkModeSwitchLabel: 'Erscheinungsbild',
         lastUpdatedText: 'Aktualisiertes Datum',
         editLink: {
-            pattern: 'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
+            pattern:
+                'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
             text: 'Diese Seite auf GitHub bearbeiten'
         },
         nav: [
             {
                 text: 'Startseite',
                 link: '/'
-            },
+            }
         ],
         sidebar: [
             {
@@ -32,9 +34,9 @@ export const de = defineConfig({
                     {
                         text: 'Guide (Beispiele für Markdown-Syntax)',
                         link: '/guide/markdown-examples'
-                    },
+                    }
                 ]
-            },
+            }
         ],
         search: {
             provider: 'local',
@@ -47,7 +49,8 @@ export const de = defineConfig({
                                 buttonAriaLabel: 'Suchen'
                             },
                             modal: {
-                                noResultsText: 'Es konnten keine Ergebnisse gefunden werden',
+                                noResultsText:
+                                    'Es konnten keine Ergebnisse gefunden werden',
                                 resetButtonTitle: 'Suchkriterien löschen',
                                 footer: {
                                     selectText: 'Option',
@@ -68,4 +71,4 @@ export const de = defineConfig({
             copyright: 'vitepress-template'
         }
     }
-})
+});

@@ -1,4 +1,4 @@
-import { PwaOptions } from '@vite-pwa/vitepress'
+import { PwaOptions } from '@vite-pwa/vitepress';
 
 export const pwaConfig: PwaOptions = {
     registerType: 'autoUpdate',
@@ -7,7 +7,7 @@ export const pwaConfig: PwaOptions = {
         suppressWarnings: true,
         navigateFallback: '/',
         navigateFallbackAllowlist: [/^\/$/],
-        type: 'module',
+        type: 'module'
     },
     manifest: {
         name: 'typo3-template',
@@ -77,9 +77,9 @@ export const pwaConfig: PwaOptions = {
         ]
     },
     workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+        globPatterns: ['**/*.{js,css,html,png,svg,ico}']
     },
     injectManifest: {
-        globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-    },
-}
+        globPatterns: ['**/*.{js,css,html,png,svg,ico}']
+    }
+};

@@ -1,8 +1,9 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 export const en = defineConfig({
     lang: 'en-US',
-    description: 'A template with VitePress with many add-ons and useful features.',
+    description:
+        'A template with VitePress with many add-ons and useful features.',
     themeConfig: {
         siteTitle: 'Documentation',
         outlineTitle: 'Navigation',
@@ -12,14 +13,15 @@ export const en = defineConfig({
         darkModeSwitchLabel: 'Appearance',
         lastUpdatedText: 'Updated Date',
         editLink: {
-            pattern: 'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
+            pattern:
+                'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
             text: 'Edit this page on GitHub'
         },
         nav: [
             {
                 text: 'Home',
                 link: '/de/'
-            },
+            }
         ],
         sidebar: [
             {
@@ -32,9 +34,9 @@ export const en = defineConfig({
                     {
                         text: 'Guide (Markdown Examples)',
                         link: '/guide/markdown-examples'
-                    },
+                    }
                 ]
-            },
+            }
         ],
         search: {
             provider: 'local',
@@ -68,4 +70,4 @@ export const en = defineConfig({
             copyright: 'vitepress-template'
         }
     }
-})
+});

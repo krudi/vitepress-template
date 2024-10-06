@@ -1,48 +1,48 @@
 name: Run linting commands
 
 on:
-  push:
-    paths:
-      - "**/*.md"
+    push:
+        paths:
+            - '**/*.md'
 
-    branches:
-      - develop
-      - main
-      - "!dependabot/**"
+        branches:
+            - develop
+            - main
+            - '!dependabot/**'
 
-  pull_request:
-    paths:
-      - "**/*.md"
+    pull_request:
+        paths:
+            - '**/*.md'
 
-    branches:
-      - develop
-      - main
-      - "!dependabot/**"
+        branches:
+            - develop
+            - main
+            - '!dependabot/**'
 
 jobs:
-  build:
-    name: Build and start Node.js project
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        node-version:
-          - "20.11.0"
-        command:
-          - "lint:markdown"
+    build:
+        name: Build and start Node.js project
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version:
+                    - '20.11.0'
+                command:
+                    - 'lint:markdown'
 
-    steps:
-      - name: Checkout the current branch
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout the current branch
+              uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '${{ matrix.node-version }}'
-          cache: npm
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '${{ matrix.node-version }}'
+                  cache: npm
 
-      - name: Install dependencies in the project
-        run: npm install
+            - name: Install dependencies in the project
+              run: npm install
 
-      - name: Run Node linting commands
-        run: "npm run ${{ matrix.command }}"
+            - name: Run Node linting commands
+              run: 'npm run ${{ matrix.command }}'

@@ -4,41 +4,46 @@ description: Please describe any bugs or issues you have encountered.
 labels: [bug]
 assignees: krudi
 body:
-  - type: checkboxes
-    attributes:
-      label: Prerequisites
-      description: Take a couple minutes to help our maintainers work faster.
-      options:
-        - label: I have read the [contributing guidelines](https://github.com/krudi/vitepress-template/blob/main/CONTRIBUTING.md)
+    - type: checkboxes
+      attributes:
+          label: Prerequisites
+          description:
+              Take a couple minutes to help our maintainers work faster.
+          options:
+              - label:
+                    I have read the [contributing
+                    guidelines](https://github.com/krudi/vitepress-template/blob/main/CONTRIBUTING.md)
+                required: true
+    - type: textarea
+      id: gh-issue-description
+      attributes:
+          label: Describe the issue
+          description:
+              Provide a summary of the issue and detail the actions, that led to
+              the issue for effective communication and troubleshooting.
+      validations:
           required: true
-  - type: textarea
-    id: gh-issue-description
-    attributes:
-      label: Describe the issue
-      description: Provide a summary of the issue and detail the actions, that led to the issue for effective communication and troubleshooting.
-    validations:
-      required: true
-  - type: dropdown
-    id: gh-operation-system
-    attributes:
-      label: On which operating system(s) are you experiencing the issue?
-      multiple: true
-      options:
-        - Windows
-        - macOS
-        - Linux
-        - Android
-        - iOS
-    validations:
-      required: true
-  - type: dropdown
-    id: gh-browser
-    attributes:
-      label: Which browser(s) are you experiencing the issue with?
-      multiple: true
-      options:
-        - Chrome
-        - Safari
-        - Firefox
-        - Microsoft Edge
-        - Opera
+    - type: dropdown
+      id: gh-operation-system
+      attributes:
+          label: On which operating system(s) are you experiencing the issue?
+          multiple: true
+          options:
+              - Windows
+              - macOS
+              - Linux
+              - Android
+              - iOS
+      validations:
+          required: true
+    - type: dropdown
+      id: gh-browser
+      attributes:
+          label: Which browser(s) are you experiencing the issue with?
+          multiple: true
+          options:
+              - Chrome
+              - Safari
+              - Firefox
+              - Microsoft Edge
+              - Opera

@@ -1,15 +1,13 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 import { metaTags } from './meta-tags';
-import { transformPageData } from './meta-tags-dynamic'
+import { transformPageData } from './meta-tags-dynamic';
 import { pwaConfig } from './pwa';
 
 export const shared = defineConfig({
     title: 'vitepress-template',
     cleanUrls: true,
     lastUpdated: true,
-    ignoreDeadLinks: [
-        /^https?:\/\/localhost/,
-    ],
+    ignoreDeadLinks: [/^https?:\/\/localhost/],
     markdown: {
         lineNumbers: true
     },
@@ -27,7 +25,7 @@ export const shared = defineConfig({
                 icon: 'github',
                 link: 'https://github.com/krudi/vitepress-template'
             }
-        ],
+        ]
     },
     pwa: pwaConfig
-})
+});
