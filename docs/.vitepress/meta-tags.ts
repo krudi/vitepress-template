@@ -4,7 +4,7 @@ export const metaTags: HeadConfig[] = [
     ['meta', { charset: 'utf-8' }],
     [
         'meta',
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=3' }
     ],
     ['meta', { name: 'application-name', content: 'vitepress-template' }],
     ['meta', { name: 'referrer', content: 'origin-when-cross-origin' }],
