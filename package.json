@@ -46,19 +46,19 @@
         "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown:fix"
     },
     "devDependencies": {
-        "@eslint/js": "^9.9.1",
+        "@eslint/js": "^9.17.0",
         "@types/eslint__js": "^8.42.3",
-        "@types/node": "^20.13.0",
-        "@vite-pwa/vitepress": "^0.5.0",
-        "eslint": "^8.57.0",
+        "@types/node": "^22.10.2",
+        "@vite-pwa/vitepress": "^0.5.3",
+        "eslint": "^9.17.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-simple-import-sort": "^12.1.1",
-        "markdownlint": "^0.34.0",
-        "markdownlint-cli": "^0.41.0",
-        "prettier": "^3.2.5",
+        "markdownlint": "^0.37.2",
+        "markdownlint-cli": "^0.43.0",
+        "prettier": "^3.4.2",
         "ts-node": "^10.9.2",
-        "typescript": "^5.4.5",
+        "typescript": "^5.7.2",
         "typescript-eslint": "^8.18.2",
-        "vitepress": "^1.2.2"
+        "vitepress": "^1.5.0"
     }
 }
