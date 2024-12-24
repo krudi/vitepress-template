@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress';
-import { metaTags } from './meta-tags';
 import { transformPageData } from './meta-tags-dynamic';
-import { pwaConfig } from './pwa';
+import { metaTags } from './meta-tags';
 
 export const shared = defineConfig({
     title: 'vitepress-template',
@@ -27,5 +26,4 @@ export const shared = defineConfig({
             }
         ]
     },
-    pwa: pwaConfig
 });

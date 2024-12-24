@@ -1,0 +1,71 @@
+{
+  "name": "vitepress-template",
+  "short_name": "vitepress-template",
+  "description": "A template with VitePress with many add-ons and useful features.",
+  "theme_color": "#FFFFFF",
+  "background_color": "#2596BE",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "display": "standalone",
+  "id": "/",
+  "start_url": "/",
+  "lang": "en-EN",
+  "orientation": "any",
+  "prefer_related_applications": true,
+  "categories": ["template"],
+  "icons": [
+    {
+      "src": "favicons/vite-16x16.svg",
+      "type": "image/svg+xml",
+      "sizes": "16x16",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicons/vite-32x32.svg",
+      "type": "image/svg+xml",
+      "sizes": "32x32",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicons/vite-48x48.svg",
+      "type": "image/svg+xml",
+      "sizes": "48x48",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicons/vite-144x144.svg",
+      "type": "image/svg+xml",
+      "sizes": "144x144",
+      "purpose": "any"
+    },
+    {
+      "src": "favicons/vite-192x192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicons/vite-512x512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "manifest/desktop-home-screen-view.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "label": "Homescreen of the app in the desktop view.",
+      "form_factor": "wide"
+    },
+    {
+      "src": "manifest/mobile-home-screen-view.webp",
+      "sizes": "540x720",
+      "type": "image/webp",
+      "label": "Homescreen of the app in the mobile view.",
+      "form_factor": "narrow"
+    }
+  ]
+}

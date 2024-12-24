@@ -85,5 +85,12 @@ export const metaTags: HeadConfig[] = [
             sizes: '180x180',
             href: '/favicons/vite-apple-touch.svg'
         }
+    ],
+    [
+        'link',
+        {
+            rel: 'manifest',
+            href: '/manifest.json'
+        }
     ]
 ];

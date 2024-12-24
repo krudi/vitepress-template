@@ -11,7 +11,7 @@
         "paths": {
             "~/*": ["./docs/*"]
         },
-        "types": ["vite/client", "vitepress", "@vite-pwa/vitepress"],
+        "types": ["vite/client", "vitepress"],
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
