@@ -1,8 +1,8 @@
-import globals from 'globals';
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
 import prettierConfig from 'eslint-config-prettier';
 import importSortPlugin from 'eslint-plugin-simple-import-sort';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 const typeScriptConfig = [
     ...tseslint.configs.recommended,

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
-import { transformPageData } from './meta-tags-dynamic';
+
 import { metaTags } from './meta-tags';
+import { transformPageData } from './meta-tags-dynamic';
 
 export const shared = defineConfig({
     title: 'vitepress-template',

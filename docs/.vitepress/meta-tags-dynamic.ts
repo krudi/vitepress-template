@@ -1,14 +1,26 @@
-export const transformPageData = (pageData) => {
-    pageData.frontmatter.head ??= [];
+import { PageData } from '~/types';
 
-    const addMeta = (type, name, property, content) => {
-        pageData.frontmatter.head.push([
-            'meta',
-            {
-                [type]: name || property,
-                content: pageData.frontmatter[content]
-            }
-        ]);
+export const transformPageData = (pageData: PageData): void => {
+    if (!pageData.frontmatter.head) {
+        pageData.frontmatter.head = [];
+    }
+
+    const addMeta = (
+        type: 'name' | 'property',
+        name: string | null,
+        property: string | null,
+        content: keyof PageData['frontmatter']
+    ) => {
+        const contentValue = pageData.frontmatter[content];
+        if (typeof contentValue === 'string') {
+            pageData.frontmatter.head!.push([
+                'meta',
+                {
+                    [type]: name || property || '',
+                    content: contentValue,
+                },
+            ]);
+        }
     };
 
     addMeta('name', 'description', null, 'description');
