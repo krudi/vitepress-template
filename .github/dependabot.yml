@@ -1,6 +1,53 @@
 version: 2
 updates:
-    - package-ecosystem: 'npm'
-      directory: '/'
-      schedule:
-          interval: 'weekly'
+  - package-ecosystem: 'github-actions'
+    directory: "/"
+    reviewers:
+      - 'krudi'
+    schedule:
+      interval: 'daily'
+    labels:
+      - 'dependencies'
+      - 'github'
+    commit-message:
+      prefix: 'build(deps)'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    reviewers:
+      - 'krudi'
+    schedule:
+      interval: 'daily'
+    labels:
+      - 'dependencies'
+      - 'npm'
+    commit-message:
+      prefix: 'build(deps)'
+    ignore:
+      - dependency-name: '*'
+        update-types:
+          - 'version-update:semver-major'
+    groups:
+      framework:
+        patterns:
+          - '^vitepress$'
+        update-types:
+          - 'minor'
+      linting-and-formatting:
+        patterns:
+          - 'eslint*'
+          - 'prettier'
+          - 'markdownlint*'
+        update-types:
+          - 'minor'
+      typings:
+        patterns:
+          - '@types/*'
+        update-types:
+          - 'minor'
+      build-tools:
+        patterns:
+          - 'typescript*'
+          - 'ts-node*'
+        update-types:
+          - 'minor'
