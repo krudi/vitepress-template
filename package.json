@@ -46,7 +46,7 @@
         "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown:fix"
     },
     "devDependencies": {
-        "@eslint/js": "^9.18.0",
+        "@eslint/js": "^9.19.0",
         "@types/eslint__js": "^8.42.3",
         "@types/node": "^22.10.10",
         "eslint": "^9.18.0",
