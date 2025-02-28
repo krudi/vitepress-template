@@ -1,4 +1,4 @@
-name: Run linting commands
+name: Frontend linting and code quality checks
 
 on:
     push:
@@ -21,28 +21,28 @@ on:
 
 jobs:
     build:
-        name: Build and start Node.js project
+        name: Install dependencies and build project
         runs-on: ubuntu-latest
         strategy:
             fail-fast: false
             matrix:
                 node-version:
-                    - '20.11.0'
+                    - '22.14.0'
                 command:
                     - 'lint:markdown'
 
         steps:
-            - name: Checkout the current branch
+            - name: Checkout repository
               uses: actions/checkout@v4
 
-            - name: Set up Node.js
+            - name: Set up Node.js environment
               uses: actions/setup-node@v4
               with:
                   node-version: '${{ matrix.node-version }}'
                   cache: npm
 
-            - name: Install dependencies in the project
+            - name: Install Node.js dependencies
               run: npm install
 
-            - name: Run Node linting commands
+            - name: Run linting command(s)
               run: 'npm run ${{ matrix.command }}'
