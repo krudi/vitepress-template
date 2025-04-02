@@ -28,24 +28,32 @@ updates:
     groups:
       framework:
         patterns:
-          - '^vitepress$'
+          - 'vitepress'
         update-types:
           - 'minor'
+
       linting-and-formatting:
         patterns:
-          - 'eslint*'
+          - 'eslint'
+          - 'eslint-config-prettier'
+          - 'eslint-plugin-simple-import-sort'
+          - '@eslint/js'
           - 'prettier'
-          - 'markdownlint*'
+          - 'markdownlint'
+          - 'markdownlint-cli'
         update-types:
           - 'minor'
+
       typings:
         patterns:
-          - '@types/*'
+          - '@types/node'
         update-types:
           - 'minor'
+
       build-tools:
         patterns:
-          - 'typescript*'
-          - 'ts-node*'
+          - 'typescript'
+          - 'ts-node'
+          - 'typescript-eslint'
         update-types:
           - 'minor'
