@@ -1,71 +1,87 @@
 {
-  "name": "vitepress-template",
-  "short_name": "vitepress-template",
-  "description": "A template with VitePress with many add-ons and useful features.",
-  "theme_color": "#FFFFFF",
-  "background_color": "#2596BE",
-  "display_override": [
-    "window-controls-overlay"
-  ],
-  "display": "standalone",
-  "id": "/",
-  "start_url": "/",
-  "lang": "en-EN",
-  "orientation": "any",
-  "prefer_related_applications": true,
-  "categories": ["template"],
-  "icons": [
-    {
-      "src": "favicons/vite-16x16.svg",
-      "type": "image/svg+xml",
-      "sizes": "16x16",
-      "purpose": "maskable"
-    },
-    {
-      "src": "favicons/vite-32x32.svg",
-      "type": "image/svg+xml",
-      "sizes": "32x32",
-      "purpose": "maskable"
-    },
-    {
-      "src": "favicons/vite-48x48.svg",
-      "type": "image/svg+xml",
-      "sizes": "48x48",
-      "purpose": "maskable"
-    },
-    {
-      "src": "favicons/vite-144x144.svg",
-      "type": "image/svg+xml",
-      "sizes": "144x144",
-      "purpose": "any"
-    },
-    {
-      "src": "favicons/vite-192x192.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192",
-      "purpose": "maskable"
-    },
-    {
-      "src": "favicons/vite-512x512.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "manifest/desktop-home-screen-view.webp",
-      "sizes": "1280x720",
-      "type": "image/webp",
-      "label": "Homescreen of the app in the desktop view.",
-      "form_factor": "wide"
-    },
-    {
-      "src": "manifest/mobile-home-screen-view.webp",
-      "sizes": "540x720",
-      "type": "image/webp",
-      "label": "Homescreen of the app in the mobile view.",
-      "form_factor": "narrow"
-    }
-  ]
+    "name": "vitepress-template",
+    "short_name": "vitepress-template",
+    "description": "A template with VitePress with many add-ons and useful features.",
+    "theme_color": "#FFFFFF",
+    "background_color": "#2596BE",
+    "display_override": ["window-controls-overlay"],
+    "display": "standalone",
+    "id": "/",
+    "start_url": "/",
+    "lang": "en-EN",
+    "orientation": "any",
+    "prefer_related_applications": true,
+    "categories": ["template"],
+    "icons": [
+        {
+            "src": "favicons/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16",
+            "purpose": "maskable"
+        },
+        {
+            "src": "favicons/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32",
+            "purpose": "maskable"
+        },
+        {
+            "src": "favicons/favicon-36x36.png",
+            "type": "image/png",
+            "sizes": "36x36",
+            "purpose": "maskable"
+        },
+        {
+            "src": "favicons/favicon-48x48.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "purpose": "maskable"
+        },
+        {
+            "src": "favicons/favicon-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72",
+            "purpose": "maskable"
+        },
+        {
+            "src": "favicons/favicon-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/favicon-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "maskable"
+        },
+        {
+            "src": "favicons/android-icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/favicon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "manifest/desktop-home-screen-view.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "label": "Homescreen of the app in the desktop view.",
+            "form_factor": "wide"
+        },
+        {
+            "src": "manifest/mobile-home-screen-view.webp",
+            "sizes": "540x720",
+            "type": "image/webp",
+            "label": "Homescreen of the app in the mobile view.",
+            "form_factor": "narrow"
+        }
+    ]
 }
