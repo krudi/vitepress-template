@@ -21,12 +21,14 @@ updates:
       - dependency-name: '*'
         update-types:
           - 'version-update:semver-major'
+
     groups:
       framework:
         patterns:
           - 'vitepress'
         update-types:
           - 'minor'
+          - 'patch'
 
       linting-and-formatting:
         patterns:
@@ -39,12 +41,14 @@ updates:
           - 'markdownlint-cli'
         update-types:
           - 'minor'
+          - 'patch'
 
       typings:
         patterns:
           - '@types/node'
         update-types:
           - 'minor'
+          - 'patch'
 
       build-tools:
         patterns:
@@ -53,3 +57,4 @@ updates:
           - 'typescript-eslint'
         update-types:
           - 'minor'
+          - 'patch'
