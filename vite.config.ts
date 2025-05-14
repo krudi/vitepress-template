@@ -1,7 +1,7 @@
 import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import type { UserConfig } from 'vite'
 
-export default defineConfig({
+export default {
     server: {
         fs: {
             allow: ['..'],
@@ -15,4 +15,4 @@ export default defineConfig({
             },
         ]
     }
-})
+} satisfies UserConfig

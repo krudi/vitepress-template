@@ -1,7 +1,6 @@
-/**
- * @type {import('prettier').Config}
- */
-export default {
+import { type Config } from "prettier";
+
+const config: Config = {
     printWidth: 80,
     tabWidth: 4,
     useTabs: false,
@@ -15,3 +14,5 @@ export default {
     insertPragma: false,
     proseWrap: 'always',
 };
+
+export default config;

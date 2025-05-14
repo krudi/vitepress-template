@@ -17,16 +17,6 @@ const typeScriptConfig = [
     },
 ];
 
-const importSortConfig = {
-  plugins: {
-    'simple-import-sort': importSortPlugin,
-  },
-  rules: {
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
-  },
-};
-
 export default tseslint.config(
     {
         ignores: [
@@ -45,7 +35,12 @@ export default tseslint.config(
     },
     {
         files: ['**/*.{js,jsx,cjs,mjs,ts,tsx,mts}'],
+        plugins: {
+            'simple-import-sort': importSortPlugin,
+        },
         rules: {
+            'simple-import-sort/imports': 'error',
+            'simple-import-sort/exports': 'error',
             'quotes': [
                 'error',
                 'single'
@@ -60,6 +55,5 @@ export default tseslint.config(
     },
     eslint.configs.recommended,
     ...typeScriptConfig,
-    prettierConfig,
-    importSortConfig
+    prettierConfig
 );

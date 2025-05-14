@@ -28,7 +28,7 @@
         "url": "https://github.com/krudi/vitepress-template.git"
     },
     "engines": {
-        "node": ">= 22.14.0",
+        "node": ">= 23.11.0",
         "npm": ">= 10.8.1"
     },
     "type": "module",
@@ -36,8 +36,8 @@
         "dev": "vitepress dev docs",
         "preview": "vitepress preview docs",
         "build": "vitepress build docs",
-        "lint:js": "eslint -c ./eslint.config.mjs",
-        "lint:js:fix": "eslint -c ./eslint.config.mjs --fix",
+        "lint:js": "eslint -c ./eslint.config.ts",
+        "lint:js:fix": "eslint -c ./eslint.config.ts --fix",
         "lint:files": "prettier --check \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
         "lint:files:fix": "prettier --write \"**/*.{js,ts,vue,css,html,xml,yaml,yml,json,json5,graphql,gql}\"",
         "lint:markdown": "markdownlint ./docs/**/*.md",
