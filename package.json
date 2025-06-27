@@ -46,9 +46,9 @@
         "lint:full:fix": "npm run lint:js:fix && npm run lint:files:fix && npm run lint:markdown:fix"
     },
     "devDependencies": {
-        "@eslint/js": "^9.29.0",
+        "@eslint/js": "^9.30.0",
         "@types/node": "^22.15.33",
-        "eslint": "^9.29.0",
+        "eslint": "^9.30.0",
         "eslint-config-prettier": "^10.1.5",
         "eslint-plugin-simple-import-sort": "^12.1.1",
         "install": "^0.13.0",
@@ -56,7 +56,7 @@
         "markdownlint": "^0.38.0",
         "markdownlint-cli": "^0.45.0",
         "npm": "^11.4.2",
-        "prettier": "^3.6.1",
+        "prettier": "^3.6.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.8.3",
         "typescript-eslint": "^8.35.0",
