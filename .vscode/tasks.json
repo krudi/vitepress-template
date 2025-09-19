@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Project wide type checking with TypeScript",
+            "type": "npm",
+            "script": "typecheck",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true,
+                "reveal": "never"
+            },
+        }
+    ],
+
+}
