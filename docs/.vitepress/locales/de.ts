@@ -15,13 +15,13 @@ export const de = defineConfig({
         editLink: {
             pattern:
                 'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
-            text: 'Diese Seite auf GitHub bearbeiten'
+            text: 'Diese Seite auf GitHub bearbeiten',
         },
         nav: [
             {
                 text: 'Startseite',
-                link: '/'
-            }
+                link: '/',
+            },
         ],
         sidebar: [
             {
@@ -29,14 +29,14 @@ export const de = defineConfig({
                 items: [
                     {
                         text: 'Startseite',
-                        link: '/'
+                        link: '/',
                     },
                     {
                         text: 'Guide (Beispiele für Markdown-Syntax)',
-                        link: '/guide/markdown-examples'
-                    }
-                ]
-            }
+                        link: '/guide/markdown-examples',
+                    },
+                ],
+            },
         ],
         search: {
             provider: 'local',
@@ -46,7 +46,7 @@ export const de = defineConfig({
                         translations: {
                             button: {
                                 buttonText: 'Suchen',
-                                buttonAriaLabel: 'Suchen'
+                                buttonAriaLabel: 'Suchen',
                             },
                             modal: {
                                 noResultsText:
@@ -54,21 +54,21 @@ export const de = defineConfig({
                                 resetButtonTitle: 'Suchkriterien löschen',
                                 footer: {
                                     selectText: 'Option',
-                                    navigateText: 'Schalten'
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    navigateText: 'Schalten',
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
         docFooter: {
             prev: 'Vorherige Seite',
-            next: 'Nächste Seite'
+            next: 'Nächste Seite',
         },
         footer: {
             message: 'Dokumentationsvorlage',
-            copyright: 'vitepress-template'
-        }
-    }
+            copyright: 'vitepress-template',
+        },
+    },
 });

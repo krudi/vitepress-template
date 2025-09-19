@@ -15,13 +15,13 @@ export const en = defineConfig({
         editLink: {
             pattern:
                 'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
-            text: 'Edit this page on GitHub'
+            text: 'Edit this page on GitHub',
         },
         nav: [
             {
                 text: 'Home',
-                link: '/de/'
-            }
+                link: '/de/',
+            },
         ],
         sidebar: [
             {
@@ -29,14 +29,14 @@ export const en = defineConfig({
                 items: [
                     {
                         text: 'Home',
-                        link: '/'
+                        link: '/',
                     },
                     {
                         text: 'Guide (Markdown Examples)',
-                        link: '/guide/markdown-examples'
-                    }
-                ]
-            }
+                        link: '/guide/markdown-examples',
+                    },
+                ],
+            },
         ],
         search: {
             provider: 'local',
@@ -46,28 +46,28 @@ export const en = defineConfig({
                         translations: {
                             button: {
                                 buttonText: 'Search',
-                                buttonAriaLabel: 'Search'
+                                buttonAriaLabel: 'Search',
                             },
                             modal: {
                                 noResultsText: 'No results were found',
                                 resetButtonTitle: 'Delete search criteria',
                                 footer: {
                                     selectText: 'Option',
-                                    navigateText: 'Switch'
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    navigateText: 'Switch',
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
         docFooter: {
             prev: 'Previous Page',
-            next: 'Next Page'
+            next: 'Next Page',
         },
         footer: {
             message: 'Documentation Template',
-            copyright: 'vitepress-template'
-        }
-    }
+            copyright: 'vitepress-template',
+        },
+    },
 });

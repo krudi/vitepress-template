@@ -9,10 +9,10 @@ export const shared = defineConfig({
     lastUpdated: true,
     ignoreDeadLinks: [/^https?:\/\/localhost/],
     markdown: {
-        lineNumbers: true
+        lineNumbers: true,
     },
     sitemap: {
-        hostname: 'http://localhost:5173'
+        hostname: 'http://localhost:5173',
     },
     head: metaTags,
     transformPageData: transformPageData,
@@ -23,8 +23,8 @@ export const shared = defineConfig({
         socialLinks: [
             {
                 icon: 'github',
-                link: 'https://github.com/krudi/vitepress-template'
-            }
-        ]
+                link: 'https://github.com/krudi/vitepress-template',
+            },
+        ],
     },
 });
