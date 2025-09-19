@@ -1,22 +1,12 @@
 {
-    "include": ["./*.ts", "./docs/.vitepress/**/*.ts", "./docs/.vitepress/**/*.vue"],
-    "exclude": ["dist", "node_modules"],
+    "extends": "@krudi/typescript-config/base.json",
     "compilerOptions": {
-        "incremental": false,
-        "target": "ESNext",
-        "lib": ["DOM", "ESNext"],
-        "module": "esnext",
-        "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "~/*": ["./docs/*"],
+            "@/*": ["./docs/*"]
         },
-        "types": ["vite/client", "vitepress"],
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "strictNullChecks": true,
-        "noUnusedLocals": true,
-        "skipLibCheck": true
-    }
+        "types": ["vite/client", "vitepress"]
+    },
+    "include": ["**/docs/.vitepress/**/*.ts", "**/docs/.vitepress/**/*.vue"],
+    "exclude": ["dist", "node_modules"],
 }

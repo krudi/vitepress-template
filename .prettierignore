@@ -1,0 +1,31 @@
+# Dependency directories
+
+node_modules
+
+# Environment / config
+
+**/.env
+**/.env.*
+**/.vscode
+**/.idea
+
+# Ignore Git ignore files
+
+**/.gitignore
+**/.gitkeep
+
+# Ignore build output
+
+**/build/**
+**/dist/**
+**/dev-dist/**
+**/coverage/**
+**/public/**
+
+# TypeScript build info files
+
+**/*.tsbuildinfo
+
+# Lock files
+
+package-lock.json

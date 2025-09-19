@@ -1,6 +1,6 @@
 import { resolve } from 'path'
-import type { UserConfig } from 'vite'
 
+/** @type {import('vite').UserConfig} */
 export default {
     server: {
         fs: {
@@ -15,4 +15,4 @@ export default {
             },
         ]
     }
-} satisfies UserConfig
+}
