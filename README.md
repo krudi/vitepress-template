@@ -4,8 +4,8 @@ A template with VitePress with many add-ons and useful features.
 
 ## Quick start
 
-> **Note**
-> You need [Node.js](https://github.com/nodejs) on your computer before running.
+> **Note** You need to have [Node.js](https://github.com/nodejs) installed on
+> your computer before running this project.
 
 1. First clone this repository and navigate into your project directory
 2. `copy .env-example .env` - copy the **.env** file
@@ -36,18 +36,7 @@ The option shows the current changes, that are made in development mode to check
 
 Navigate into your project directory and start your preview mode up.
 
-- `npm run lint:js`: lints [JavaScript](https://www.javascript.com) files
-  - `npm run lint:js:fix`: to eliminate all possible errors
-- `npm run lint:files`: lints configuration files with [Prettier](https://github.com/prettier/prettier)
-  - `npm run lint:files:fix`: to eliminate all possible errors
-- `npm run lint:markdown`: - lints markdown files with [markdownlint-cli](https://www.npmjs.com/package/markdownlint-cli)
-  - `npm run lint:markdown`: to eliminate all possible errors
-- `npm run lint:full` - to run all lints commands above
-- `npm run lint:full:fix` - to run all lints all commands above and fix those automatically
-
-## Additional information
-
-Commands for [NPM](https://www.npmjs.com) to manage the packages.
-
-- `npx npm-check-updates` - to show outdated [NPM](https://www.npmjs.com) packages
-- `npx npm-check-updates -u` - to update [NPM](https://www.npmjs.com) packages
+- `npm run lint:eslint`: lints [JavaScript](https://www.javascript.com) files
+  - `npm run lint:eslint:fix`: to eliminate all possible errors
+- `npm run lint:markdownlint`: - lints markdown files with [markdownlint-cli](https://www.npmjs.com/package/markdownlint-cli)
+  - `npm run lint:markdownlint`: to eliminate all possible errors
