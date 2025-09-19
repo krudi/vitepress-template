@@ -1,60 +1,23 @@
 version: 2
 updates:
-  - package-ecosystem: 'github-actions'
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: 'daily'
+      interval: "daily"
     labels:
-      - 'dependencies'
+      - "dependencies"
     commit-message:
-      prefix: 'build(deps)'
+      prefix: "build(deps)"
 
-  - package-ecosystem: 'npm'
-    directory: '/'
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: 'daily'
+      interval: "daily"
     labels:
-      - 'dependencies'
+      - "dependencies"
     commit-message:
-      prefix: 'build(deps)'
+      prefix: "build(deps)"
     ignore:
-      - dependency-name: '*'
+      - dependency-name: "*"
         update-types:
-          - 'version-update:semver-major'
-
-    groups:
-      framework:
-        patterns:
-          - 'vitepress'
-        update-types:
-          - 'minor'
-          - 'patch'
-
-      linting-and-formatting:
-        patterns:
-          - 'eslint'
-          - 'eslint-config-prettier'
-          - 'eslint-plugin-simple-import-sort'
-          - '@eslint/js'
-          - 'prettier'
-          - 'markdownlint'
-          - 'markdownlint-cli'
-        update-types:
-          - 'minor'
-          - 'patch'
-
-      typings:
-        patterns:
-          - '@types/node'
-        update-types:
-          - 'minor'
-          - 'patch'
-
-      build-tools:
-        patterns:
-          - 'typescript'
-          - 'ts-node'
-          - 'typescript-eslint'
-        update-types:
-          - 'minor'
-          - 'patch'
+          - "version-update:semver-major"
