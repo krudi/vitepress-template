@@ -38,7 +38,7 @@
         "@krudi/eslint-config": "^0.1.4",
         "@krudi/prettier-config": "^0.1.4",
         "@krudi/typescript-config": "^0.1.4",
-        "@types/node": "^24.6.0",
+        "@types/node": "^24.7.2",
         "markdownlint": "^0.38.0",
         "markdownlint-cli": "^0.45.0",
         "prettier": "^3.6.2",
