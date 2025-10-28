@@ -35,7 +35,7 @@
         "lint:markdownlint:fix": "markdownlint --fix ./docs/**/*.md"
     },
     "devDependencies": {
-        "@krudi/eslint-config": "^0.1.4",
+        "@krudi/eslint-config": "^0.1.7",
         "@krudi/prettier-config": "^0.1.4",
         "@krudi/typescript-config": "^0.1.4",
         "@types/node": "^24.6.0",
