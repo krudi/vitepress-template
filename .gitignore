@@ -18,12 +18,12 @@ node_modules
 
 # ESLint files
 
-.eslintcache
+.cache/.eslintcache
 .eslint-config-inspector
 
 # TypeScript files
 
-tsconfig.tsbuildinfo
+.cache/tsbuildinfo.json
 
 # macOS and iOS files
 
