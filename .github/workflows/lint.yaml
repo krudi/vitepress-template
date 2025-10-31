@@ -3,36 +3,33 @@ name: Lint
 on: [push, pull_request]
 
 concurrency:
-    group: lint-${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
+  group: lint-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
-    contents: read
+  contents: read
 
 jobs:
-    lint:
-        runs-on: ubuntu-latest
-        strategy:
-            fail-fast: false
-            matrix:
-                node-version: ['22.18.0']
-                lint-commands:
-                    - 'lint:eslint'
-                    - 'lint:markdownlint'
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lint-commands:
+          - "npm run lint:eslint"
+          - "npm run lint:markdownlint"
 
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
 
-            - name: Set up Node.js environment
-              uses: actions/setup-node@v5
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: pnpm
-                  registry-url: https://registry.npmjs.org
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v5
+        with:
+          cache: npm
 
-            - name: Install dependencies
-              run: pnpm install
+      - name: Install dependencies
+        run: npm install
 
-            - name: Run linting command (${{ matrix.lint-commands }})
-              run: ${{ matrix.lint-commands }}
+      - name: Run lint command (${{ matrix.lint-commands }})
+        run: ${{ matrix.lint-commands }}

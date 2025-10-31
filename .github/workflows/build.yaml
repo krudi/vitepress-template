@@ -3,32 +3,26 @@ name: Build
 on: [push]
 
 concurrency:
-    group: build-${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
-    contents: read
+  contents: read
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            fail-fast: false
-            matrix:
-                node-version: ['22.18.0']
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
 
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v5
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v5
+        with:
+          cache: npm
 
-            - name: Set up Node.js environment
-              uses: actions/setup-node@v5
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: npm
+      - name: Install dependencies
+        run: npm install
 
-            - name: Install dependencies
-              run: npm install
-
-            - name: Compile and build
-              run: npm run build
+      - name: Compile and build
+        run: npm run build
