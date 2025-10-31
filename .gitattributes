@@ -1,0 +1,63 @@
+* text=auto eol=lf
+
+# VitePress
+*.md                text eol=lf diff=markdown
+*.mdx               text eol=lf diff=markdown
+docs/**/*.md        text eol=lf diff=markdown
+
+# Source code
+*.ts                text eol=lf
+*.tsx               text eol=lf
+*.js                text eol=lf
+*.jsx               text eol=lf
+*.mjs               text eol=lf
+*.cjs               text eol=lf
+*.vue               text eol=lf
+
+# Configuration
+*.json              text eol=lf diff=json
+*.json5             text eol=lf diff=json
+*.yaml              text eol=lf diff=yaml
+*.yml               text eol=lf diff=yaml
+*.toml              text eol=lf
+*.ini               text eol=lf
+*.env               text eol=lf
+*.env.*             text eol=lf
+*.lock              text eol=lf
+
+# Styles & assets
+*.css               text eol=lf diff=css
+*.scss              text eol=lf
+*.sass              text eol=lf
+*.less              text eol=lf
+*.svg               text eol=lf
+
+# Binary assets
+*.png               binary
+*.jpg               binary
+*.jpeg              binary
+*.gif               binary
+*.webp              binary
+*.avif              binary
+*.ico               binary
+*.mp4               binary
+*.mp3               binary
+*.woff              binary
+*.woff2             binary
+*.ttf               binary
+*.otf               binary
+
+# Export rules
+/.github/                export-ignore
+/.vscode/                export-ignore
+.env                     export-ignore
+.env.*                   export-ignore
+node_modules/            export-ignore
+dist/                    export-ignore
+coverage/                export-ignore
+reports/                 export-ignore
+docs/.vitepress/cache/   export-ignore
+docs/.vitepress/dist/    export-ignore
+*.log                    export-ignore
+*.cache                  export-ignore
+*.tmp                    export-ignore
