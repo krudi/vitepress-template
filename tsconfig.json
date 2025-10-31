@@ -1,12 +1,11 @@
 {
     "extends": "@krudi/typescript-config/base.json",
     "compilerOptions": {
-        "baseUrl": ".",
         "paths": {
             "@/*": ["./docs/*"]
         },
         "types": ["vite/client", "vitepress"]
     },
     "include": ["**/docs/.vitepress/**/*.ts", "**/docs/.vitepress/**/*.vue"],
-    "exclude": ["dist", "node_modules"],
+    "exclude": ["dist", "node_modules"]
 }
