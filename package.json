@@ -2,6 +2,7 @@
     "$schema": "https://json.schemastore.org/package.json",
     "name": "vitepress-template",
     "description": "A template with VitePress with many add-ons and useful features.",
+    "version": "0.1.0",
     "license": "MIT",
     "author": {
         "name": "krudi",
