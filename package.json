@@ -39,7 +39,7 @@
     },
     "devDependencies": {
         "@krudi/eslint-config": "^0.1.7",
-        "@krudi/prettier-config": "^0.1.6",
+        "@krudi/prettier-config": "^0.1.7",
         "@krudi/typescript-config": "^0.1.9",
         "@types/node": "^24.10.1",
         "markdownlint": "^0.39.0",
