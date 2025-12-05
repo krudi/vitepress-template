@@ -3,6 +3,8 @@
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
         "editorconfig.editorconfig",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
         "davidanson.vscode-markdownlint"
     ]
 }
