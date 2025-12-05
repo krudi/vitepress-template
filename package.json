@@ -34,6 +34,8 @@
         "typecheck": "tsc -p tsconfig.json --noEmit",
         "lint:eslint": "eslint . --cache --cache-location .cache/.eslintcache",
         "lint:eslint:fix": "eslint . --fix --cache --cache-location .cache/.eslintcache",
+        "lint:prettier": "prettier --check . --cache --cache-strategy metadata --cache-location .cache/.prettiercache",
+        "lint:prettier:fix": "prettier --write . --cache --cache-strategy metadata --cache-location .cache/.prettiercache",
         "lint:markdownlint": "markdownlint ./docs/**/*.md",
         "lint:markdownlint:fix": "markdownlint --fix ./docs/**/*.md"
     },
