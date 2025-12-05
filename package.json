@@ -42,7 +42,7 @@
         "@krudi/prettier-config": "^0.1.6",
         "@krudi/typescript-config": "^0.1.9",
         "@types/node": "^24.10.1",
-        "markdownlint": "^0.39.0",
+        "markdownlint": "^0.40.0",
         "markdownlint-cli": "^0.46.0",
         "prettier": "^3.7.4",
         "ts-node": "^10.9.2",
