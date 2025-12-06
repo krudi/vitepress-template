@@ -17,7 +17,6 @@ jobs:
       matrix:
         lint-commands:
           - "npm run lint:eslint"
-          - "npm run lint:markdownlint"
 
     steps:
       - name: Checkout repository

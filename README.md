@@ -4,8 +4,7 @@ A template with VitePress with many add-ons and useful features.
 
 ## Quick start
 
-> **Note** You need to have [Node.js](https://github.com/nodejs) installed on
-> your computer before running this project.
+> **Note** You need to have [Node.js](https://github.com/nodejs) installed on your computer before running this project.
 
 1. First clone this repository and navigate into your project directory
 2. `copy .env-example .env` - copy the **.env** file
@@ -28,7 +27,8 @@ Build and optimize your application with [Vite](https://github.com/vitejs/vite) 
 
 ## Starting preview mode
 
-The option shows the current changes, that are made in development mode to check that everything works before deploying the condo to production.
+The option shows the current changes, that are made in development mode to check that everything works before deploying
+the condo to production.
 
 - `npm run preview`: shows a live project preview
 
@@ -37,6 +37,4 @@ The option shows the current changes, that are made in development mode to check
 Navigate into your project directory and start your preview mode up.
 
 - `npm run lint:eslint`: lints [JavaScript](https://www.javascript.com) files
-  - `npm run lint:eslint:fix`: to eliminate all possible errors
-- `npm run lint:markdownlint`: - lints markdown files with [markdownlint-cli](https://www.npmjs.com/package/markdownlint-cli)
-  - `npm run lint:markdownlint`: to eliminate all possible errors
+    - `npm run lint:eslint:fix`: to eliminate all possible errors
