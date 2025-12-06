@@ -2,8 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export const de = defineConfig({
     lang: 'de-DE',
-    description:
-        'Eine Vorlage mit VitePress mit vielen Add-ons und nützlichen Funktionen.',
+    description: 'Eine Vorlage mit VitePress mit vielen Add-ons und nützlichen Funktionen.',
     themeConfig: {
         siteTitle: 'Dokumentation',
         outlineTitle: 'Navigation',
@@ -13,8 +12,7 @@ export const de = defineConfig({
         darkModeSwitchLabel: 'Erscheinungsbild',
         lastUpdatedText: 'Aktualisiertes Datum',
         editLink: {
-            pattern:
-                'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
+            pattern: 'https://github.com/krudi/vitepress-template/edit/main/docs/:path',
             text: 'Diese Seite auf GitHub bearbeiten',
         },
         nav: [
@@ -49,8 +47,7 @@ export const de = defineConfig({
                                 buttonAriaLabel: 'Suchen',
                             },
                             modal: {
-                                noResultsText:
-                                    'Es konnten keine Ergebnisse gefunden werden',
+                                noResultsText: 'Es konnten keine Ergebnisse gefunden werden',
                                 resetButtonTitle: 'Suchkriterien löschen',
                                 footer: {
                                     selectText: 'Option',

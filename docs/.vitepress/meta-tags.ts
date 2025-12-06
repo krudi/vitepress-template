@@ -144,8 +144,7 @@ export const metaTags: HeadConfig[] = [
         'meta',
         {
             name: 'googlebot',
-            content:
-                'index, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1',
+            content: 'index, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1',
         },
     ],
     [

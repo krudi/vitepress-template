@@ -5,9 +5,7 @@
             "label": "Project wide type checking with TypeScript",
             "type": "npm",
             "script": "typecheck",
-            "problemMatcher": [
-                "$tsc"
-            ],
+            "problemMatcher": ["$tsc"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -15,8 +13,7 @@
             "presentation": {
                 "clear": true,
                 "reveal": "never"
-            },
+            }
         }
-    ],
-
+    ]
 }
