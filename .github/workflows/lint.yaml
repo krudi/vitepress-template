@@ -1,34 +1,31 @@
 name: Lint
 
-on: [push, pull_request]
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 concurrency:
-    group: lint-${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
+  group: lint-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
-    contents: read
+  contents: read
 
 jobs:
-    lint:
-        runs-on: ubuntu-latest
-        strategy:
-            fail-fast: false
-            matrix:
-                lint-commands:
-                    - 'npm run lint:eslint'
+  lint:
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v6
-
-            - name: Set up Node.js environment
-              uses: actions/setup-node@v6
-              with:
-                  cache: npm
-
-            - name: Install dependencies
-              run: npm install
-
-            - name: Run lint command (${{ matrix.lint-commands }})
-              run: ${{ matrix.lint-commands }}
+    steps:
+      - uses: krudi/reusable-actions/.github/actions/github-checkout@main
+      - uses: krudi/reusable-actions/.github/actions/node-setup@main
+        with:
+          cache: npm
+          node_version_file: .nvmrc
+      - uses: krudi/reusable-actions/.github/actions/node-install@main
+      - uses: krudi/reusable-actions/.github/actions/ci-command@main
+        with:
+          command: npm run lint:eslint
