@@ -36,7 +36,7 @@
         "@krudi/eslint-config": "^0.1.7",
         "@krudi/prettier-config": "^0.1.8",
         "@krudi/typescript-config": "^0.1.9",
-        "@types/node": "^24.10.3",
+        "@types/node": "^24.10.4",
         "ts-node": "^10.9.2",
         "typescript": "^5.9.3",
         "vitepress": "^1.6.4"
