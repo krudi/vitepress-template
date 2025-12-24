@@ -33,7 +33,7 @@
         "typecheck": "tsc -p tsconfig.json --noEmit"
     },
     "devDependencies": {
-        "@krudi/eslint-config": "^0.1.7",
+        "@krudi/eslint-config": "^0.1.8",
         "@krudi/prettier-config": "^0.1.8",
         "@krudi/typescript-config": "^0.1.9",
         "@types/node": "^24.10.4",
