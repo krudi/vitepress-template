@@ -24,6 +24,7 @@
     "type": "module",
     "scripts": {
         "build": "vitepress build docs",
+        "clean": "rm -rf .cache node_modules docs/.vitepress/dist",
         "dev": "vitepress dev docs",
         "lint:eslint": "eslint . --cache --cache-location .cache/.eslintcache",
         "lint:eslint:fix": "eslint . --fix --cache --cache-location .cache/.eslintcache",
