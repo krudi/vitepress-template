@@ -14,9 +14,10 @@ docs/.vitepress/dist
 docs/dev-dist
 
 # Tooling caches files
-.cache/
 .cache/.eslintcache
 .eslint-config-inspector
+.cache/.prettiercache
+.cache/.stylelintcache
 .cache/tsbuildinfo.json
 
 # OS files
