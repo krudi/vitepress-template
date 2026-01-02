@@ -70,16 +70,16 @@
     ],
     "screenshots": [
         {
-            "src": "manifest/desktop-home-screen-view.webp",
+            "src": "manifest/desktop-home-screen-view.png",
             "sizes": "1280x720",
-            "type": "image/webp",
+            "type": "image/png",
             "label": "Homescreen of the app in the desktop view.",
             "form_factor": "wide"
         },
         {
-            "src": "manifest/mobile-home-screen-view.webp",
+            "src": "manifest/mobile-home-screen-view.png",
             "sizes": "540x720",
-            "type": "image/webp",
+            "type": "image/png",
             "label": "Homescreen of the app in the mobile view.",
             "form_factor": "narrow"
         }

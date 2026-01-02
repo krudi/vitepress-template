@@ -21,6 +21,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITEPRESS_PUBLIC_SITE_URL: ${{ secrets.VITEPRESS_PUBLIC_SITE_URL }}
 
     steps:
       - uses: krudi/reusable-actions/.github/actions/github-checkout@main

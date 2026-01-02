@@ -24,6 +24,34 @@ export const metaTags: HeadConfig[] = [
     [
         'meta',
         {
+            name: 'author',
+            content: 'Patryk Kudlik',
+        },
+    ],
+    [
+        'meta',
+        {
+            name: 'creator',
+            content: 'Patryk Kudlik',
+        },
+    ],
+    [
+        'meta',
+        {
+            name: 'publisher',
+            content: 'Patryk Kudlik',
+        },
+    ],
+    [
+        'link',
+        {
+            rel: 'canonical',
+            href: process.env.VITEPRESS_PUBLIC_SITE_URL ?? 'http://localhost:5173',
+        },
+    ],
+    [
+        'meta',
+        {
             name: 'referrer',
             content: 'origin-when-cross-origin',
         },
@@ -46,7 +74,7 @@ export const metaTags: HeadConfig[] = [
         'meta',
         {
             property: 'og:url',
-            content: 'http://localhost:5173',
+            content: process.env.VITEPRESS_PUBLIC_SITE_URL ?? 'http://localhost:5173',
         },
     ],
     [
@@ -60,7 +88,7 @@ export const metaTags: HeadConfig[] = [
         'meta',
         {
             property: 'og:image:url',
-            content: 'http://localhost:5173/meta-tags/page-view.webp',
+            content: `${process.env.VITEPRESS_PUBLIC_SITE_URL ?? 'http://localhost:5173'}/meta-tags/page-view.png`,
         },
     ],
     [
@@ -108,13 +136,6 @@ export const metaTags: HeadConfig[] = [
     [
         'meta',
         {
-            name: 'twitter:creator:id',
-            content: '1467726470533754880',
-        },
-    ],
-    [
-        'meta',
-        {
             name: 'twitter:card',
             content: 'app',
         },
@@ -123,7 +144,7 @@ export const metaTags: HeadConfig[] = [
         'meta',
         {
             name: 'twitter:image',
-            content: 'http://localhost:5173/meta-tags/page-view.webP/',
+            content: `${process.env.VITEPRESS_PUBLIC_SITE_URL ?? 'http://localhost:5173'}/meta-tags/page-view.png`,
         },
     ],
     [
@@ -145,6 +166,13 @@ export const metaTags: HeadConfig[] = [
         {
             name: 'googlebot',
             content: 'index, nofollow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1',
+        },
+    ],
+    [
+        'meta',
+        {
+            name: 'google-site-verification',
+            content: 'Q9rK2mA0ZxWcE4B_HY8nLJpUoFqGdS7V5tI1eM6l3',
         },
     ],
     [
